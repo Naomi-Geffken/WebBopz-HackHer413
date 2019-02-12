@@ -1,6 +1,30 @@
 {
-  "name": "Getting Started Example",
-  "version": "1.0",
-  "description": "Build an Extension!",
-  "manifest_version": 2
+// Tells what chrome extension does
+
+// Required
+"name": "Web Bopz",
+"version": "1.0",
+"manifest_version": 2,
+
+// Recommended
+"description": "music and backgrounds to match your mood!", 
+
+// Icon in the top right corner 
+"icons": {
+	// if you only show one dimension, chrome automatically resizes
+	"128": "car.png" 
+},
+
+
+// Type of action: Broswer, Page, or none
+"browser_action": {
+	// This is what reads when you hover over the extension icon
+	"default_title": "Always have Music Bopz with you <3", 
+	"default_popup": "popup.html"
+},
+
+// Intent of app what you will access from the user
+"permissions": [
+"http://*/*", "https://*/*"
+]
 }
